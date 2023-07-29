@@ -166,11 +166,11 @@
 
 # Сортировка пузырьком
 
-def buble(lst, n):
-    for j in range(n-1):
-        for i in range(n-1-j):
-            if lst[i] > lst[i+1]:
-                lst[i], lst[i+1] = lst[i+1], lst[i]
-    return lst
-
-print(buble([5,7,4,3,8,2], 6))
+# def buble(lst, n):
+#     for j in range(n-1):
+#         for i in range(n-1-j):
+#             if lst[i] > lst[i+1]:
+#                 lst[i], lst[i+1] = lst[i+1], lst[i]
+#     return lst
+#
+# print(buble([5,7,4,3,8,2], 6))
