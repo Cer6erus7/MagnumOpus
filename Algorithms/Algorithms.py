@@ -14,7 +14,7 @@
 #         else:
 #             high = mid - 1
 #     return None
-
+#
 # print(binary_search(50, [i for i in range(0,100,2)]))
 
 
@@ -88,21 +88,21 @@
 
 # Быстрая сортировка
 
-# def qsort(lst):
-#     if len(lst) < 2:
-#         return lst
-#
-#     point = lst[0]
-#
-#     left = list(filter(lambda x:x<point, lst))
-#     mid = [i for i in lst if i == point]
-#     right = [i for i in lst if i > point]
-#
-#     return qsort(left) + mid + qsort(right)
-#
-# lst = [2,6,9,45,345,9,4,237,9,0,34,68,2,46,872,35,7,4234,6,8465,8,3,56,82,345,7]
-#
-# print(qsort(lst))
+def qsort(lst):
+    if len(lst) < 2:
+        return lst
+
+    point = lst[0]
+
+    left = list(filter(lambda x:x<point, lst))
+    mid = [i for i in lst if i == point]
+    right = [i for i in lst if i > point]
+
+    return qsort(left) + mid + qsort(right)
+
+lst = [2,6,9,45,345,9,4,237,9,0,34,68,2,46,872,35,7,4234,6,8465,8,3,56,82,345,7]
+
+print(qsort(lst))
 
 
 # Алгоритм Евклида
